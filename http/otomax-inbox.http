@@ -1,0 +1,1099 @@
+
+### Aktifkan downline/reseller
+POST http://127.0.0.1:2002/api/otomax/inbox/AktifkanDL
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "pin": "1234"
+}
+
+### Batalkan transaksi yang belum diproses
+POST http://127.0.0.1:2002/api/otomax/inbox/BatalTransaksi
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "trxid": "1",
+    "pin": "1234"
+}
+
+### Cancel balance transfer
+POST http://127.0.0.1:2002/api/otomax/inbox/BatalTransferSaldo
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "jumlah": "1000000",
+    "pin": "1234"
+}
+
+### Cek harga produk
+POST http://127.0.0.1:2002/api/otomax/inbox/CekHarga
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1"
+}
+
+### Check downline's markup
+POST http://127.0.0.1:2002/api/otomax/inbox/CekMarkup
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "pin": "1234"
+}
+
+### Check product markup
+POST http://127.0.0.1:2002/api/otomax/inbox/CekMarkupProduk
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "kodeproduk": "aigo1",
+    "pin": "1234"
+}
+
+### Check all product markups
+POST http://127.0.0.1:2002/api/otomax/inbox/CekMarkupProduk2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "pin": "1234"
+}
+
+### Cek N (lihat Setting.LimitCekMutasi) mutasi saldo/deposit terakhir
+POST http://127.0.0.1:2002/api/otomax/inbox/CekMutasi
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Cek mutasi saldo terakhir, khusus manual, tiket, dan transfer saldo
+POST http://127.0.0.1:2002/api/otomax/inbox/CekMutasi2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Check current OID for OtomaX HTH
+POST http://127.0.0.1:2002/api/otomax/inbox/CekOid
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234"
+}
+
+### Cek saldo akhir
+POST http://127.0.0.1:2002/api/otomax/inbox/CekSaldo
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234"
+}
+
+### Cek saldo downline
+POST http://127.0.0.1:2002/api/otomax/inbox/CekSaldoDL
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001"
+}
+
+### Cek status transaksi
+POST http://127.0.0.1:2002/api/otomax/inbox/CekStatusTransaksi
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nomor tujuan": "6281935155404"
+}
+
+### Cek status transaksi
+POST http://127.0.0.1:2002/api/otomax/inbox/CekStatusTransaksi2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "tujuan": "6281935155404"
+}
+
+### Cek status transaksi
+POST http://127.0.0.1:2002/api/otomax/inbox/CekStatusTransaksi3
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "tanggal": "23",
+    "tujuan": "6281935155404"
+}
+
+### Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir
+POST http://127.0.0.1:2002/api/otomax/inbox/CekTransaksiAkhir
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Daftarkan downline/reseller baru
+POST http://127.0.0.1:2002/api/otomax/inbox/DaftarDL
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nama": "ndiing",
+    "alamat": "pacitan",
+    "nomorhp": "6281935155404",
+    "pin": "1234"
+}
+
+### Daftarkan downline/reseller baru
+POST http://127.0.0.1:2002/api/otomax/inbox/DaftarDL2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nama": "ndiing",
+    "alamat": "pacitan",
+    "nomorhp": "6281935155404",
+    "markup": "100",
+    "pin": "1234"
+}
+
+### Daftarkan downline/reseller baru
+POST http://127.0.0.1:2002/api/otomax/inbox/DaftarDL3
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nama": "ndiing",
+    "alamat": "pacitan",
+    "nomorhp": "6281935155404",
+    "kodelevel": "a",
+    "pin": "1234"
+}
+
+### Registration of non member
+POST http://127.0.0.1:2002/api/otomax/inbox/DaftarNonMember
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "name": "ndiing",
+    "address": "pacitan",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe GTalk
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusGTalk
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "email": "ndiing.inc@gmail.com",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe GTalk untuk downline
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusGTalk2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "email": "ndiing.inc@gmail.com",
+    "pin": "1234"
+}
+
+### Delete product markup
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusMarkupProduk
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "pin": "1234",
+    "kodeproduk": "aigo1"
+}
+
+### Delete product markup
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusMarkupProduk2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "pin": "1234"
+}
+
+### Delete product markup
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusMarkupProduk3
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe SMS
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusNomor
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "tujuan": "6281935155404",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe SMS
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusNomor2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "tujuan": "6281935155404",
+    "pin": "1234"
+}
+
+### Hapus nomor WA
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusWA
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nomor": "6281935155404",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe YM
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusYM
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "yahooid": "ndiing.inc",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe YM dari downline
+POST http://127.0.0.1:2002/api/otomax/inbox/HapusYM2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "yahooid": "ndiing.inc",
+    "pin": "1234"
+}
+
+### Cek laporan mutasi saldo per tanggal
+POST http://127.0.0.1:2002/api/otomax/inbox/LaporanMutasi
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "tanggal": "23"
+}
+
+### Cek laporan transaksi per tanggal
+POST http://127.0.0.1:2002/api/otomax/inbox/LaporanTransaksi
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "tanggal": "23"
+}
+
+### View gift list
+POST http://127.0.0.1:2002/api/otomax/inbox/LihatHadiahPoin
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Lihat daftar downline
+POST http://127.0.0.1:2002/api/otomax/inbox/ListDL
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Lihat daftar downline dari downline (sub-downline)
+POST http://127.0.0.1:2002/api/otomax/inbox/ListDL2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001"
+}
+
+### Lihat daftar pengirim semua tipe
+POST http://127.0.0.1:2002/api/otomax/inbox/ListPengirim
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Lihat daftar pengirim tipe GTalk
+POST http://127.0.0.1:2002/api/otomax/inbox/ListPengirimGTalk
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Lihat daftar pengirim tipe GTalk untuk downline
+POST http://127.0.0.1:2002/api/otomax/inbox/ListPengirimGTalk2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001"
+}
+
+### Lihat daftar pengirim tipe SMS
+POST http://127.0.0.1:2002/api/otomax/inbox/ListPengirimSMS
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Lihat daftar pengirim tipe SMS dari downline
+POST http://127.0.0.1:2002/api/otomax/inbox/ListPengirimSMS2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001"
+}
+
+### Lihat daftar pengirim tipe YM
+POST http://127.0.0.1:2002/api/otomax/inbox/ListPengirimYM
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Lihat daftar pengirim tipe YM dari downline
+POST http://127.0.0.1:2002/api/otomax/inbox/ListPengirimYM2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001"
+}
+
+### Non-aktifkan downline/reseller
+POST http://127.0.0.1:2002/api/otomax/inbox/NonAktifkanDL
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "pin": "1234"
+}
+
+### Reset pin member
+POST http://127.0.0.1:2002/api/otomax/inbox/ResetPin
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe GTalk
+POST http://127.0.0.1:2002/api/otomax/inbox/TambahGTalk
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "email": "ndiing.inc@gmail.com",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe GTalk untuk downline
+POST http://127.0.0.1:2002/api/otomax/inbox/TambahGTalk2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "email": "ndiing.inc@gmail.com",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe SMS
+POST http://127.0.0.1:2002/api/otomax/inbox/TambahNomor
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "tujuan": "6281935155404",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe SMS untuk downline
+POST http://127.0.0.1:2002/api/otomax/inbox/TambahNomor2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "tujuan": "6281935155404",
+    "pin": "1234"
+}
+
+### Tambah nomor WA
+POST http://127.0.0.1:2002/api/otomax/inbox/TambahWA
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "number": "6281935155404",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe YM
+POST http://127.0.0.1:2002/api/otomax/inbox/TambahYM
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "yahooid": "ndiing.inc",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe YM untuk downline
+POST http://127.0.0.1:2002/api/otomax/inbox/TambahYM2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "yahooid": "ndiing.inc",
+    "pin": "1234"
+}
+
+### Tiket Deposit
+POST http://127.0.0.1:2002/api/otomax/inbox/TiketDeposit
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "jumlah": "500000",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1",
+    "tujuan": "6281935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi10
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "kodeproduk": "aigo1",
+    "tujuan": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi11
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "nominal": "10000000",
+    "tujuan": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi12
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "nominal": "10000000"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi13
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "kodeproduk": "aigo1"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi14
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "kodeproduk": "aigo1",
+    "counter": "1",
+    "tujuan": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi15
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "tujuan": "6281935155404",
+    "nominal": "10000000",
+    "counter": "1",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi16
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "nominal": "10000000",
+    "tujuan": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi17
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "nominal": "10000000"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi18
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "kodeproduk": "aigo1"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi19
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "kodeproduk": "aigo1",
+    "tujuan": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "kodeproduk": "aigo1",
+    "tujuan": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi20
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "nominal": "10000000",
+    "tujuan": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi21
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "nominal": "10000000"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi22
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "kodeproduk": "aigo1"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi23
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "tujuan": "6281935155404",
+    "pin": "1234",
+    "kodeproduk": "aigo1",
+    "qty": "1"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi24
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1",
+    "qty": "1",
+    "tujuan": "6281935155404",
+    "pin": "1234",
+    "counter": "1"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi25
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1",
+    "tujuan": "6281935155404",
+    "pin": "1234",
+    "trxid": "1"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi26
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1",
+    "tujuan": "6281935155404",
+    "pin": "1234",
+    "enduser": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi27
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi28
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nominal": "10000000",
+    "counter": "1",
+    "tujuan": "6281935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi29
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1",
+    "qty": "1",
+    "tujuan": "6281935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi3
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "counter": "1",
+    "kodeproduk": "aigo1",
+    "qty": "1",
+    "tujuan": "6281935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi4
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1",
+    "nominal": "10000000",
+    "tujuan": "6281935155404",
+    "pin": "1234",
+    "enduser": "6281935155404"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi5
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi6
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi7
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nominal": "10000000"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi8
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodeproduk": "aigo1"
+}
+
+### Transaksi pengisian pulsa
+POST http://127.0.0.1:2002/api/otomax/inbox/Transaksi9
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nominal": "10000000",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa TANPA pengecekan dobel
+POST http://127.0.0.1:2002/api/otomax/inbox/TransaksiBebasDobel
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Transfer saldo/deposit ke downline/reseller
+POST http://127.0.0.1:2002/api/otomax/inbox/TransferSaldo
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "jumlah": "1000000",
+    "pin": "1234"
+}
+
+### Transfer saldo/deposit ke downline/reseller
+POST http://127.0.0.1:2002/api/otomax/inbox/TransferSaldo2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "jumlah": "1000000",
+    "keterangan": "keterangan",
+    "pin": "1234"
+}
+
+### Allows transfer balance across the membership network
+POST http://127.0.0.1:2002/api/otomax/inbox/TransferSaldoLintas
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Tukar komisi tunda dalam bentuk deposit
+POST http://127.0.0.1:2002/api/otomax/inbox/TukarKomisi
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "jumlah": "1000000",
+    "pin": "1234"
+}
+
+### Tukar semua komisi tunda dalam bentuk deposit
+POST http://127.0.0.1:2002/api/otomax/inbox/TukarKomisi2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G"
+}
+
+### Menukar poin
+POST http://127.0.0.1:2002/api/otomax/inbox/TukarPoin
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kode": "aigo1",
+    "pin": "1234"
+}
+
+### Change IP Address
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahAlamatIP
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "newip": "192.168.18.10",
+    "pin": "1234"
+}
+
+### Ubah level downline
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahLevel
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "kodelevel": "a",
+    "pin": "1234"
+}
+
+### Change downline's markup
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahMarkup
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "markup": "100",
+    "pin": "1234"
+}
+
+### Change product markup
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahMarkupProduk
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "kodereseller": "ox0001",
+    "pin": "1234",
+    "kodeproduk": "aigo1",
+    "markup": "100"
+}
+
+### Change product markup for all downlines
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahMarkupProduk2
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pin": "1234",
+    "kodeproduk": "aigo1",
+    "markup": "100"
+}
+
+### Ubah nama
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahNama
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "nama": "ndiing",
+    "pin": "1234"
+}
+
+### Change OID for OtomaX HTH
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahOid
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "oid": "otomaxid",
+    "pin": "1234"
+}
+
+### Change IP Password
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahPasswordIP
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "oldpassword": "password",
+    "newpassword": "drowssap",
+    "pin": "1234"
+}
+
+### Ubah PIN
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahPin
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pinlama": "1234",
+    "pinbaru": "4321"
+}
+
+### Change Report URL
+POST http://127.0.0.1:2002/api/otomax/inbox/UbahReportURL
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "newurl": "http://192.168.18.10/api/otomax/report",
+    "pin": "1234"
+}

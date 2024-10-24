@@ -1,0 +1,154 @@
+### Mendapatkan data transaksi
+GET http://127.0.0.1:2002/api/otomax/transaksi
+
+
+
+
+
+
+### Mendapatkan data inbox
+GET http://127.0.0.1:2002/api/otomax/inbox
+
+### 
+POST http://127.0.0.1:2002/api/otomax/inbox
+Content-Type: application/json
+
+{
+    "pengirim": "ndiing_client@jabb.im",
+    "tipe_pengirim": "G",
+    "pesan": "sal.1234"
+}
+
+
+
+ 
+
+
+### Mendapatkan data outbox
+GET http://127.0.0.1:2002/api/otomax/outbox
+
+### 
+POST http://127.0.0.1:2002/api/otomax/outbox
+Content-Type: application/json
+
+{
+    "penerima": "ndiing_client@jabb.im",
+    "tipe_penerima": "G",
+    "pesan": "hi"
+}
+
+### 
+PATCH http://127.0.0.1:2002/api/otomax/outbox
+Content-Type: application/json
+
+{
+    "kode": 22,
+    "status": 0
+}
+
+
+
+
+
+
+### Mendapatkan data mutasi
+GET http://127.0.0.1:2002/api/otomax/mutasi
+
+### 
+GET http://127.0.0.1:2002/api/otomax/cekHargaReseller
+
+
+
+
+
+
+### Mendapatkan daftar operator
+GET http://127.0.0.1:2002/api/otomax/operator
+
+### Mendapatkan daftar produk
+GET http://127.0.0.1:2002/api/otomax/produk
+
+### Mendapatkan data level
+GET http://127.0.0.1:2002/api/otomax/level
+
+### Mendapatkan daftar reseller
+GET http://127.0.0.1:2002/api/otomax/reseller
+
+### Mendapatkan data pengirim
+GET http://127.0.0.1:2002/api/otomax/pengirim
+
+
+
+
+
+
+### Mendapatkan data parameter
+GET http://127.0.0.1:2002/api/otomax/parameter
+
+
+
+
+
+
+### Mendapatkan data terminal
+GET http://127.0.0.1:2002/api/otomax/terminal
+
+### Mendapatkan data modul
+GET http://127.0.0.1:2002/api/otomax/modul
+
+### Mendapatkan data i-banking
+GET http://127.0.0.1:2002/api/otomax/i_banking
+
+### Mendapatkan data WA center
+GET http://127.0.0.1:2002/api/otomax/wa_center
+
+### Mendapatkan data IM center
+GET http://127.0.0.1:2002/api/otomax/im_center
+
+
+
+
+
+
+### 
+GET http://127.0.0.1:2002/api/otomax/tiket_deposit
+
+### Mendapatkan data bank
+GET http://127.0.0.1:2002/api/otomax/data_bank
+
+
+
+
+
+
+### 
+POST http://127.0.0.1:2002/api/otomax/tambahSaldo
+Content-Type: application/json
+
+{
+    "kode_reseller": "OWNER",
+    "jumlah": 1000000,
+    "keterangan": "Deposit",
+    "kirim_info_ke": [],
+    "nama_pemakai": "Administrator",
+    "kode_pemakai": "admin"
+}
+
+### 
+POST http://127.0.0.1:2002/api/otomax/mutasiRekeningBank
+Content-Type: application/json
+
+{
+    "bank": "BCA",
+    "no_rekening": "123456789",
+    "saldo": 10000000,
+    "docs": [
+        {
+            "tgl_bank": "02/10/2024",
+            "jumlah": 200000,
+            "tipe": "K",
+            "saldo": 10000000,
+            "keterangan": "keterangan 200000 02/10/2024"
+        }
+    ]
+}
